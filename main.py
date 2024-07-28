@@ -14,8 +14,8 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
     page.padding = 0
     page.spacing = 0
-    page.window_width = 330
-    page.window_height = 660
+    page.window.width = 330
+    page.window.height = 660
     # configure custom fonts
     page.fonts = {
         # Instagram logo font
