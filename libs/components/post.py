@@ -105,7 +105,7 @@ class PostView:
                 [
                     self._build_header(),
                     ImageLoader(
-                        src=self.image, width=self.page.window_width, height=350
+                        src=self.image, width=self.page.window.width, height=350
                     ),
                     self._build_options(),
                     self._build_footer(),
