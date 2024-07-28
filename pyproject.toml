@@ -5,7 +5,7 @@ description = "This project is a UI clone of Instagram developed using the Flet 
 authors = ["tokitou-san <tokitousan2005@gmail.com>"]
 license = "AGPL-3.0"
 readme = "README.md"
-packages = [{include = "libs"}]
+packages = [{ include = "libs" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
