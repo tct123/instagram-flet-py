@@ -1,48 +1,81 @@
-# instagram-flet-py
+# InstagramFletPy app
 
-This project is a UI clone of Instagram developed using the Flet framework and Python. \
-It aims to replicate the user interface and basic functionality of the Instagram app.
-<p>
-   <img width="49%" src="https://github.com/tokitou-san/Finstagram/assets/114811070/bc3cebda-548f-43fc-af69-f2d7823375de" />
-   <img width="49%" src="https://github.com/tokitou-san/Finstagram/assets/114811070/72917aeb-fdec-4719-8254-d788973f7c3c" />
-</p>
+## Run the app
 
-## Installation and Setup
-Make sure you've poetry installed on your system. \
-[https://python-poetry.org/](https://python-poetry.org/)
+### uv
 
-1. Clone this repository and `cd` into directory:
-   ```bash
-   git clone https://github.com/tokitouq/instagram-flet-py.git
-   cd instagram-flet-py
-   ```
-2. Install project dependencies using Poetry:
-   ```bash
-   poetry install
-   ```
-3. Run the application:
-   ```bash
-   poetry run python main.py
-   ```
+Run as a desktop app:
 
-## Contribution Guide
+```
+uv run flet run
+```
 
-Contributions are welcome! If you want to contribute to this project, there are several ways you can help:
+Run as a web app:
 
-- **Pull Requests:** If you have a suggestion/idea that would make this project better, please create a pull request. All pull requests will be reviewed by us and adjusted if needed.
+```
+uv run flet run --web
+```
 
-- **Issue Reporting:** You can also open a new issue or help us with an existing one. Providing detailed information about bugs, feature requests, or improvements is immensely helpful.
+### Poetry
 
-- **Star the Project:** Other than that, you can also help the project by giving it a star! Your support is highly appreciated 😊.
+Install dependencies from `pyproject.toml`:
 
-To contribute, follow these steps:
+```
+poetry install
+```
 
-1. Fork the repository.
-2. Create a new branch for your feature/bug fix: `git checkout -b feature-name`.
-3. Make your changes and commit them: `git commit -m "Add some feature"`.
-4. Push the changes to your fork: `git push origin feature-name`.
-5. Create a pull request in the original repository.
+Run as a desktop app:
 
-## License
+```
+poetry run flet run
+```
 
-This project is licensed under the [AGPL-3.0](https://github.com/tokitouq/instagram-flet-py/blob/main/LICENSE) License.
+Run as a web app:
+
+```
+poetry run flet run --web
+```
+
+For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
+
+## Build the app
+
+### Android
+
+```
+flet build apk -v
+```
+
+For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
+
+### iOS
+
+```
+flet build ipa -v
+```
+
+For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
+
+### macOS
+
+```
+flet build macos -v
+```
+
+For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
+
+### Linux
+
+```
+flet build linux -v
+```
+
+For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
+
+### Windows
+
+```
+flet build windows -v
+```
+
+For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
