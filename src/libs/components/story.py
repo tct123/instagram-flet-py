@@ -14,13 +14,13 @@ class StoryView:
                     src=self.image, width=60, height=60, border_radius=100
                 ),
                 border_radius=100,
-                border=ft.border.all(3, ft.colors.WHITE),
+                border=ft.border.all(3, ft.Colors.WHITE),
             ),
             border_radius=100,
             gradient=ft.LinearGradient(
                 begin=ft.alignment.top_center,
                 end=ft.alignment.bottom_center,
-                colors=[ft.colors.BLUE, ft.colors.YELLOW],
+                colors=[ft.Colors.BLUE, ft.Colors.YELLOW],
                 rotation=45,
             ),
             padding=2.5,
@@ -50,13 +50,13 @@ class AddStory:
                 ft.Container(
                     content=ft.Container(
                         content=ft.Icon(
-                            name=ft.icons.ADD, size=13, color=ft.colors.WHITE
+                            name=ft.Icons.ADD, size=13, color=ft.Colors.WHITE
                         ),
                         width=22,
                         height=22,
-                        bgcolor=ft.colors.BLUE,
+                        bgcolor=ft.Colors.BLUE,
                         border_radius=100,
-                        border=ft.border.all(3, ft.colors.WHITE),
+                        border=ft.border.all(3, ft.Colors.WHITE),
                     ),
                     alignment=ft.alignment.bottom_right,
                 ),

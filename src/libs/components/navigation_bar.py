@@ -9,7 +9,7 @@ class NavigationBar(ft.Container):
         self.content = self._build_navbar()
         self.padding = ft.padding.all(10)
         self.border = ft.border.only(
-            top=ft.BorderSide(1, ft.colors.with_opacity(0.05, ft.colors.BLACK))
+            top=ft.BorderSide(1, ft.Colors.with_opacity(0.05, ft.Colors.BLACK))
         )
 
     def _build_navbar(self) -> ft.Control:

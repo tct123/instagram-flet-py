@@ -1,5 +1,5 @@
 import flet as ft
-from flet_core.colors import with_opacity
+from flet import Colors
 from utils import ImageLoader, Icon
 
 
@@ -42,7 +42,9 @@ class PostView:
                                         self.bg_song,
                                         size=9,
                                         font_family="Roboto",
-                                        color=with_opacity(0.75, ft.colors.BLACK),
+                                        color=Colors.with_opacity(
+                                            0.75, ft.Colors.BLACK
+                                        ),
                                     ),
                                 ],
                                 spacing=0,

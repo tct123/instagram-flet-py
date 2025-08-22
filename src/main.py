@@ -36,7 +36,7 @@ def main(page: ft.Page):
             self.content = self._create_view()
             self.padding = ft.padding.symmetric(vertical=10)
             self.border = ft.border.symmetric(
-                vertical=ft.BorderSide(1, ft.colors.with_opacity(0.05, ft.colors.BLACK))
+                vertical=ft.BorderSide(1, ft.Colors.with_opacity(0.05, ft.Colors.BLACK))
             )
 
         def _initialize_data(self) -> None:
