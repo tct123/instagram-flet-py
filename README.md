@@ -1,4 +1,4 @@
-# InstagramFletPy app
+# Instagramfletpy app
 
 ## Run the app
 
